@@ -23,7 +23,7 @@
             <th>No</th>
             <th>Image</th>
             <th>Name</th>
-          
+
             <th width="280px">Action</th>
         </tr>
         @foreach ($student as $student)
@@ -31,6 +31,7 @@
                 <td>{{ ++$i }}</td>
                 <td><img src="{{asset('student-images/'.$student->image)}}" alt="" width="100px" height="100"></td>
                 <td>{{ $student->name }}</td>
+
                 <td>
                     <form action="{{ route('students.destroy',$student->id) }}" method="POST">
 

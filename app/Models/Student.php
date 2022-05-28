@@ -10,6 +10,6 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name','image'
+        'name','number','image'
     ];
 }
